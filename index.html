@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "0e0N99agpAhp91sK0",
+      });
+   })();
+</script>
 </head>
 <body>
     <nav>
@@ -15,18 +25,18 @@
         <a href="">Fathima Fathah</a>
         </div>
         <div class="right"> 
-         <a href="https://github.com/fathimafathah7" target:"_blank" rel=" noopener noreferrer">
+         <a href="https://github.com/fathimafathah7" target="_blank" rel=" noopener noreferrer">
             <i class="fa-brands fa-github"></i>
             <span>Github</span></a>
-        <a href="https://linkedin.com/FathimaFathah" target:"_blank" rel=" noopener noreferrer">
+        <a href="https://linkedin.com/FathimaFathah" target="_blank" rel=" noopener noreferrer">
             <i class="fa-brands fa-linkedin"></i>
             <span>LinkedIn</span>
         </a>
-        <a href="https://instagram.com/fathi_fathah" target:"_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/fathi_fathah" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-instagram"></i>
         <span>Instagram</span>
         </a>
-        <a href="mailto:fathimafathah@gmail.com" target:"_blank" rel="noopener noreferrer">
+        <a href="mailto:fathimafathah@gmail.com" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-envelope"></i>
             <span>Email</span>
         </a>
@@ -99,16 +109,17 @@
                 I'm always open to new oppurtunities and collaboration.if your'e interested in discussing a project or want to know more about my work,please don't hesitate to get in touch.looking forward to work with you.Thank You.
             </div>
 
-    <form>
-    <label for="name"></label>
-    <input type="text" id="name" placeholder="Your name"><br>
-    <label for="email"></label>
-    <input type="email" id="email" placeholder="Your email"><br>
-    <label for="messages"></label>
-    <textarea id="message" cols="20" rows="6" placeholder="Your Message"></textarea><br>
-    <button type="submit">Submit </button>
+    <form id="fo">
+    <label for="uname"></label>
+    <input type="text" id="uname" name="name" placeholder="Your name"><br>
+    <label for="gmail"></label>
+    <input type="email" id="gmail"  name="email" placeholder="Your email"><br>
+    <label for="message"></label>
+    <textarea id="message" cols="20" rows="6" name="message" placeholder="Your Message"></textarea><br>
+    <button type="button" onclick="sendMail()">Submit </button>
 
     </form>
+    <script type="text/javascript" src="index.js"></script>
         </div>
     </section>
 </main>
